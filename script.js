@@ -1,6 +1,6 @@
 // import { apiKey } from "./config.js";
 // require('dotenv').config();
-
+const config = require('./config')
 console.log(config.MY_KEY);
 // const apiKey = process.env.api_key;
 
