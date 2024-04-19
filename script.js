@@ -1,4 +1,4 @@
-import { apiKey } from "./config";
+import { apiKey } from "./config.js";
 
 async function fetchWeather() {
     const city = document.getElementById('cityInput').value;
