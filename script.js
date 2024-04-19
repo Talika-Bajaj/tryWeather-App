@@ -1,10 +1,14 @@
-import { apiKey } from "./config.js";
+// import { apiKey } from "./config.js";
+// require('dotenv').config();
+
+console.log(config.MY_KEY);
+// const apiKey = process.env.api_key;
 
 async function fetchWeather() {
     const city = document.getElementById('cityInput').value;
     // const api_key = config.api_key;
     let units = "&units=metric";
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}${units}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${config.MY_KEY}${units}`;
 
     try {
         const response = await fetch(url);
