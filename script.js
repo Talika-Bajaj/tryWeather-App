@@ -1,8 +1,10 @@
+import { apiKey } from "./config";
+
 async function fetchWeather() {
     const city = document.getElementById('cityInput').value;
-    const api_key = config.api_key;
+    // const api_key = config.api_key;
     let units = "&units=metric";
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}${units}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}${units}`;
 
     try {
         const response = await fetch(url);
